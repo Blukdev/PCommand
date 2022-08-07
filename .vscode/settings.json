@@ -1,0 +1,23 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "string": "cpp",
+        "functional": "cpp",
+        "future": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "ranges": "cpp",
+        "thread": "cpp",
+        "cmath": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "version": "cpp",
+        "*.inc": "cpp",
+        "algorithm": "cpp",
+        "complex": "cpp",
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "source_location": "cpp"
+    }
+}
