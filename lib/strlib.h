@@ -74,9 +74,16 @@ inline pair<string,string> pairSplit(string &s,char k){
         }else now.push_back(c);
     result.second=now;
     return result;
-} 
+}
+inline string del(string &s){
+    string result="";
+    for(auto c:s)
+        if(c!=' ')
+            result.push_back(c);
+    return result;
+}
 inline int parseInt(string &s){
     int x=0;
     for(auto c:s)x=(x<<3)+(x<<1)+(c&15);
     return x;
-} 
+}
