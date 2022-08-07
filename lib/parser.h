@@ -41,6 +41,7 @@ Function init(string &code){
     initer.Name=Name;
     string arg=readto(')',code);
     initer.args=split(arg,',');
+    for(auto thisarg:initer.args)checker.insert(thisarg);
     ++readptr;
     return initer;
 }
@@ -50,7 +51,6 @@ Function Parse(string &code){
         transfer(code);
         string line=readtodouble(';','{',code);
         if(cut(line,4)=="var "){
-            //后期需要加入变量名检查
             //生命周期检查的部分只在另外一个嵌套解析函数中写
             auto variables_str=recut(line,4);
             auto variables=split(variables_str,',');    
